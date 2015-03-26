@@ -1,3 +1,4 @@
+
 class BabiesController < ApplicationController
   def new
     @baby = Baby.new

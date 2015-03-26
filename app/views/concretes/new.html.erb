@@ -1,1 +1,13 @@
-<!-- Your form goes here! -->
+<%= form_tag("/concretes", method: "post") do  %>
+	<%= label_tag(:concrete, "New Concrete:") %>
+		<%= label_tag "Mix Type" %>
+		<%= text_field_tag('concrete[mix_type]') %>
+		<%= label_tag "Color" %>
+		<%= text_field_tag('concrete[color]') %>
+		<%= label_tag "Psi" %>
+		<%= text_field_tag('concrete[psi]') %>
+		<%= label_tag "Cost per Yard" %>
+		<%= text_field_tag('concrete[cost_per_yard]') %>
+		<br>
+		<%= submit_tag("Create Concrete") %>
+<% end %>
